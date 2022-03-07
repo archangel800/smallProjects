@@ -3,14 +3,18 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-    //idnexOf
-        String letters ="asdjkfasl;dkfjas;ldfkj2345$#)def(lkasdjf;laskdjf";
-        //if the character is not present it returns -1
-        System.out.printf("'c' is located at index %d%n", letters.indexOf('l'));
-        System.out.printf("'k' is located at index %d%n", letters.indexOf('k', 5));
+   //concatenating is the same as using + operator
+        //it returns new String object containing the characters from both original Strings.
 
-        System.out.printf("Last 'a' is located at index %d%n", letters.lastIndexOf('a'));
+        String s1 = "Happy ";
+        String s2 = "Birthday";
+        System.out.printf("s1 = %s%ns2 = %s%n%n",s1, s2);
 
-        System.out.printf(" \"def\" is located at index %d%n", letters.indexOf("de"));
+        System.out.printf("Result of s1.concat(s2) = %s%n", s1.concat(s2) );
+        //s1 is not affected, because concat returns whole new object.
+        System.out.printf("s1 after concatenation = %s%n", s1);
+
+        String s3 = s1.concat(s2);
+        System.out.println(s3);
     }
 }
