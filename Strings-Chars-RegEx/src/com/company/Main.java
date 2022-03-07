@@ -11,6 +11,6 @@ public class Main {
 
         System.out.printf("Last 'a' is located at index %d%n", letters.lastIndexOf('a'));
 
-        System.out.printf(" \"def\" is located at index %d%n", letters.indexOf("def"));
+        System.out.printf(" \"def\" is located at index %d%n", letters.indexOf("de"));
     }
 }
