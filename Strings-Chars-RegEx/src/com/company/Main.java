@@ -3,18 +3,26 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-   //concatenating is the same as using + operator
-        //it returns new String object containing the characters from both original Strings.
+        // every object in Java has a toString method that enables a program to obtain the object's string representation
+        //this method cannot be used with primitives
+        //so we have String.valueOf(primitive) that takes care of it
+        char[] charArray = {'a', 'b', 'c', 'd', 'e', 'f'};
+        boolean booleanValue = true;
+        char characterValue = 'Z';
+        int integerValue = 7;
+        long longValue = 10000000000L; // L suffix indicates long
+        float floatValue = 2.5f; // f indicates that 2.5 is a float
+        double doubleValue = 33.333; // no suffix, double is default
+        Object objectRef = "hello"; // assign string to an Object reference
 
-        String s1 = "Happy ";
-        String s2 = "Birthday";
-        System.out.printf("s1 = %s%ns2 = %s%n%n",s1, s2);
-
-        System.out.printf("Result of s1.concat(s2) = %s%n", s1.concat(s2) );
-        //s1 is not affected, because concat returns whole new object.
-        System.out.printf("s1 after concatenation = %s%n", s1);
-
-        String s3 = s1.concat(s2);
-        System.out.println(s3);
+        System.out.printf("char array = %s%n", String.valueOf(charArray) );
+        System.out.printf("part of char array = %s%n", String.valueOf(charArray, 3, 3) );
+        System.out.printf("boolean = %s%n", String.valueOf(booleanValue) );
+        System.out.printf("char = %s%n", String.valueOf(characterValue) );
+        System.out.printf("int = %s%n", String.valueOf(integerValue) );
+        System.out.printf("long = %s%n", String.valueOf(longValue) );
+        System.out.printf("float = %s%n", String.valueOf(floatValue) );
+        System.out.printf("double = %s%n", String.valueOf(doubleValue) );
+        System.out.printf("Object = %s", String.valueOf(objectRef) );
     }
 }
