@@ -3,26 +3,33 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        // every object in Java has a toString method that enables a program to obtain the object's string representation
-        //this method cannot be used with primitives
-        //so we have String.valueOf(primitive) that takes care of it
+       //In programs that frequently perform string concatenation, or other string modifications
+        //it is often more efficient to implement the modifications with class StringBuilder
+        //StringBuilder class is used for creating and manipulating dynamic strings.
+        //StringBuilders are not thread safe. if multiple threads require access to the same dynamic string information
+        //use StringBuffer instead. StringBuffer is thread save, with identical capabilities but it is little bit slower.
+        Object objectRef = "hello";
+        String string = "goodbye";
         char[] charArray = {'a', 'b', 'c', 'd', 'e', 'f'};
         boolean booleanValue = true;
         char characterValue = 'Z';
         int integerValue = 7;
-        long longValue = 10000000000L; // L suffix indicates long
-        float floatValue = 2.5f; // f indicates that 2.5 is a float
-        double doubleValue = 33.333; // no suffix, double is default
-        Object objectRef = "hello"; // assign string to an Object reference
+        long longValue = 10000000000L;
+        float floatValue = 2.5f;
+        double doubleValue = 33.333;
+        StringBuilder lastBuffer = new StringBuilder("last buffer");
+        StringBuilder buffer = new StringBuilder();
+        buffer.append(objectRef).append(System.getProperty("line.separator")).append(string).append(System.getProperty("line.separator"))
+                .append(charArray).append(System.getProperty("line.separator")).append(charArray, 0,3).append(System.getProperty("line.separator")).append("Modi aqa");
+        String some =buffer.toString();
+        System.out.println(some);
 
-        System.out.printf("char array = %s%n", String.valueOf(charArray) );
-        System.out.printf("part of char array = %s%n", String.valueOf(charArray, 3, 3) );
-        System.out.printf("boolean = %s%n", String.valueOf(booleanValue) );
-        System.out.printf("char = %s%n", String.valueOf(characterValue) );
-        System.out.printf("int = %s%n", String.valueOf(integerValue) );
-        System.out.printf("long = %s%n", String.valueOf(longValue) );
-        System.out.printf("float = %s%n", String.valueOf(floatValue) );
-        System.out.printf("double = %s%n", String.valueOf(doubleValue) );
-        System.out.printf("Object = %s", String.valueOf(objectRef) );
+        //we can concatenate using StringBuilder
+        String string1 = "Hello";
+        String string2 = "BC";
+        int value = 22;
+        String s = new StringBuilder().append(string1).append(string2).append(value).toString();
+        System.out.println(s);
+
     }
 }
