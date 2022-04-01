@@ -1,0 +1,27 @@
+
+V
+java:S1854"@Remove this useless assignment to local variable "integerValue".(Úèÿó
+G
+java:S1481"1Remove this unused "integerValue" local variable.(Úèÿó
+N	java:S106"9Replace this use of System.out or System.err by a logger.(•çÄÊ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(”Åüüşÿÿÿÿ
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(ù‡õùÿÿÿÿ
+N	java:S106$"9Replace this use of System.out or System.err by a logger.(ÖÒÃ
+M	java:S106("9Replace this use of System.out or System.err by a logger.(‘‡Ÿ;
+N	java:S1060"9Replace this use of System.out or System.err by a logger.(Ïµ¡Œ
+N	java:S1064"9Replace this use of System.out or System.err by a logger.(·ÈÑè
+[
+java:S16128"@Replace this lambda with method reference 'System.out::println'.(“±à¡ûÿÿÿÿ
+S	java:S1068"9Replace this use of System.out or System.err by a logger.(“±à¡ûÿÿÿÿ
+V
+java:S1612:"@Replace this lambda with method reference 'System.out::println'.(ƒŠ¼ê
+N	java:S106:"9Replace this use of System.out or System.err by a logger.(ƒŠ¼ê
+B
+java:S1602:",Remove useless curly braces around statement(ƒŠ¼ê
+S	java:S106;"9Replace this use of System.out or System.err by a logger.(…“¢¨üÿÿÿÿ
+N	java:S106?"9Replace this use of System.out or System.err by a logger.(ª¿¾¥
+U	java:S106E"9Replace this use of System.out or System.err by a logger.(œ•é‹8¹ÅÚëù/
+J
+java:S1199D"-Extract this nested code block into a method.(»€„‘8½ÅÚëù/
+_
+java:S2583"DChange this condition so that it does not always evaluate to "false"(ˆ¹’Åøÿÿÿÿ
